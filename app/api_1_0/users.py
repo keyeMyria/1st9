@@ -16,7 +16,7 @@ def protected2():
 def token_protected():
 	return 'you\'re logged in by Token!'
 
-"""
+
 # not use below API, only use built-in Flask-Security register
 @api.route('/register', methods=['GET', 'POST'])
 def register():
@@ -41,7 +41,7 @@ def register():
     'status': 'failure',
     'msg': 'register fail, check username and password.'
     })
-"""
+
 
 @api.route('/users/<int:id>')
 @auth_token_required

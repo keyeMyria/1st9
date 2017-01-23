@@ -155,7 +155,7 @@
                 if (!this.validation) return;
                 // get CSRF
                 var csrf_token = '';
-                this.$http.get('/register').then((response) => {
+                this.$http.get('/api/v1.0/register').then((response) => {
                     // 响应成功回调
                     var data = response.body;
                     // <input id="csrf_token" name="csrf_token" type="hidden" value="1483433916##5b057abdef66da070c8385752b78f6c584f6ba41"><input
